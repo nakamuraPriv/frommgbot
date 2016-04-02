@@ -42,7 +42,7 @@ class RouteData
   
 module.exports = (robot) ->
   robot.hear /@to (.*)/i, (msg) ->
-    route_data = new RouteData msg.match[1]
-    route_data.result(robot, msg)
+    routeData = new RouteData msg.match[1]
+    routeData.result(robot, msg)
 
     
