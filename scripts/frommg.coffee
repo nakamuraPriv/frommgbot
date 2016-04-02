@@ -2,4 +2,4 @@
 
 module.exports = (robot) ->
   robot.respond /@to (.+)/i, (msg) ->
-    msg.reply "to #{msg.match[1]} :: 1時間"
+    msg.reply "to #{msg.match[0]} :: 1時間"
